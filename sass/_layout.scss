@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+body {
+  background-color: $light-bg;
+  color: $text-color;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3 {
+  color: $primary-color;
+}
+
+.card {
+  border-radius: $border-radius;
+}

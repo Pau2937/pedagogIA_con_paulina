@@ -1,0 +1,17 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.btn-primary {
+  @include button-style($primary-color);
+}
+
+.btn-outline-primary {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
