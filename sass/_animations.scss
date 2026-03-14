@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes softZoom {
+  from {
+    opacity: 0.8;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero h1,
+.hero p,
+main h1,
+main h2 {
+  animation: fadeInUp 1s ease both;
+}
+
+.card,
+.program-card,
+.recursos-card {
+  animation: softZoom 0.8s ease both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.program-card:hover,
+.recursos-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}

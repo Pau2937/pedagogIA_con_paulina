@@ -3,15 +3,23 @@
 
 .btn-primary {
   @include button-style($primary-color);
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.25);
+
+  &:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 18px rgba(106, 13, 173, 0.3);
+  }
 }
 
 .btn-outline-primary {
   border: 2px solid $primary-color;
   color: $primary-color;
   border-radius: 50px;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: $primary-color;
     color: white;
+    transform: translateY(-3px);
   }
 }

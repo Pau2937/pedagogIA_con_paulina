@@ -9,15 +9,24 @@
 .btn-primary:hover {
   opacity: 0.9;
 }
+.btn-primary {
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.25);
+}
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 18px rgba(106, 13, 173, 0.3);
+}
 
 .btn-outline-primary {
   border: 2px solid #6a0dad;
   color: #6a0dad;
   border-radius: 50px;
+  transition: all 0.3s ease;
 }
 .btn-outline-primary:hover {
   background-color: #6a0dad;
   color: white;
+  transform: translateY(-3px);
 }
 
 body {
